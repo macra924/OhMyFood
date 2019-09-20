@@ -36,7 +36,6 @@ html {
     height: 100%;
     width: 100%;
     display:block;
-    font-family: '';
 }
 html, body {
     margin:0;
@@ -65,21 +64,21 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5% 10% 2.5% 10%;
+    margin: 5% 3% 2.5% 3%;
 }
-#laNote {
+#leDelice {
     width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #FCDFDB;
+    background-color: #ededef;
     box-shadow: 1px 1px 10px;
     margin: 0% 5% 10% 5%;
     padding: 5% 0 5% 0;
     justify-content: center;
 }
 .titreEntree {
-    background-color: #FCDFDB;
+    background-color: #ededef;
     font-size: 1.5vw;
     text-align: center;
     margin: 0 2% 0 2%;
@@ -103,19 +102,18 @@ h2 {
 
 }
 .plats {
-    font-size: 1.5vw;
+    font-family: 'blokletters_balpenbalpen';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 12% 0 12%;
 }
-.desc {
-    font-family: 'blokletters_potloodpotlood';
-    font-style: italic;
-    font-size: 1vw;
-}
 .prix {
     font-family: 'blokletters_balpenbalpen';
+    font-weight: bold;
 }
 footer {
     position: fixed;
@@ -139,8 +137,8 @@ footer a {
     text-decoration: none;
 }
 #link {
-    font-family: 'blokletters_balpenbalpen';
     font-family: 'blokletters_viltstifviltstift';
+    font-weight: lighter;
     position: relative;
     margin-top: -0.3%;
 }
@@ -173,7 +171,3 @@ footer a {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
-
-
-

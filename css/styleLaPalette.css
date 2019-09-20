@@ -136,13 +136,13 @@ footer a {
     font-size: 2vw;
     text-decoration: none;
 }
-#link {
+h3 {
     font-family: 'blokletters_viltstifviltstift';
     font-weight: lighter;
     position: relative;
     margin-top: -0.3%;
 }
-#link:after{
+h3:after{
     content: '';
     position: absolute;
     width: 0;
@@ -153,7 +153,7 @@ footer a {
     transition: width 1s ease;
   
 }
-#link:hover:after{
+h3:hover:after{
     width: 100%;
     left: 0;
     background: #000;

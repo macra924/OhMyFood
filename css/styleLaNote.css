@@ -22,33 +22,52 @@ header a {
     text-decoration: none;
     color: #FDCB46;
 }
-#menus {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
+#laNote {
+    width: 90%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #FCDFDB;
+    box-shadow: 1px 1px 10px;
+    margin: 0% 5% 10% 5%;
+    padding: 5% 0 5% 0;
+    justify-content: center;
 }
-.petitsMenu {
+.pres {
     display: block;
-    max-width: 100%;
-    height: auto;
-}
-.petitMenu {
-    display: inline-block;
+    justify-content: center;
     max-width: 40%;
     height: auto;
-    margin: 5% auto;
-    box-shadow: 1px 1px 20px #555;
+    margin: 2% auto 2% auto;
+
 }
-#prochainement {
-    display: inline-block;
-    justify-content: center;
-    margin: 4% 40% 8% 40%;
+.bartext {
+    height: 0.3vw;
+    width: auto;
+    background:#333;
     text-align: center;
-    color: #FDCB46;
-    font-size: 2.5vw;
-    background-color: #579C87;
-    padding: 1%;
-    border-radius: 25px;
+    margin: 5% 15% 5% 15%;
+    border-radius: 25%;
+    display: block;
+}
+h3 {
+    background-color: #FCDFDB;
+    font-size: 1.5vw;
+    font-style: italic;
+    margin: -1.3% 40% 2% 40%;
+}
+.plats {
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15% 0 15%;
+}
+.desc {
+    font-style: italic;
+}
+.prix {
+    font-weight: bold;
 }
 footer {
     position: fixed;
@@ -75,21 +94,25 @@ h2 {
     text-align: center;
     font-size: 1.8vw;
 }
-.petitMenu {
-    transition: all 1s ease-in;
+.link {
+    position: relative;
 }
-.petitMenu:hover {
-    transform: scale(1.15);
-    opacity: 0.6;
+.link:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.2vw;
+    display: block;
+    margin-top: 0.2%;
+    right: 0;
+    background: #000;
+    transition: width 1s ease;
+  
 }
-.point1 {
-    animation: point1 2s infinite;
-}
-.point2 {
-    animation: point2 2s infinite;
-}
-.point3 {
-    animation: point3 2s infinite;
+.link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #000;
 }
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -104,21 +127,7 @@ h2 {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-@keyframes point1 {
-    0% {opacity: 0}
-    50% {opacity: 1}
-    100% {opacity: 1}
-}
-@keyframes point2 {
-    0% {opacity: 0}
-    50% {opacity: 1}
-    100% {opacity: 0}
-}
-@keyframes point3 {
-    0% {opacity: 1}
-    50% {opacity: 0}
-    100% {opacity: 1}
-}
+
 
 
 

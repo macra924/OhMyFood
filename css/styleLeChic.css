@@ -145,10 +145,10 @@ h2 {
     justify-content: center;
     margin: 5% 0 2.5% 0;
 }
-#link {
+h3 {
     position: relative;
 }
-#link:after{
+h3:after{
     content: '';
     position: absolute;
     width: 0;
@@ -160,7 +160,7 @@ h2 {
     transition: width 1s ease;
   
 }
-#link:hover:after{
+h3:hover:after{
     width: 100%;
     left: 0;
     background: #000;
@@ -178,7 +178,3 @@ h2 {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
-
-
-

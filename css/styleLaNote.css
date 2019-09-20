@@ -1,3 +1,37 @@
+@font-face {
+    font-family: 'blokletters_balpenbalpen';
+    src: url('Blokletters-Balpen-webfont.eot');
+    src: url('Blokletters-Balpen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Balpen-webfont.woff2') format('woff2'),
+         url('Blokletters-Balpen-webfont.woff') format('woff'),
+         url('Blokletters-Balpen-webfont.ttf') format('truetype'),
+         url('Blokletters-Balpen-webfont.svg#blokletters_balpenbalpen') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+        font-family: 'blokletters_potloodpotlood';
+    src: url('Blokletters-Potlood-webfont.eot');
+    src: url('Blokletters-Potlood-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Potlood-webfont.woff2') format('woff2'),
+         url('Blokletters-Potlood-webfont.woff') format('woff'),
+         url('Blokletters-Potlood-webfont.ttf') format('truetype'),
+         url('Blokletters-Potlood-webfont.svg#blokletters_potloodpotlood') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'blokletters_viltstifviltstift';
+    src: url('Blokletters-Viltstift-webfont.eot');
+    src: url('Blokletters-Viltstift-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Blokletters-Viltstift-webfont.woff2') format('woff2'),
+         url('Blokletters-Viltstift-webfont.woff') format('woff'),
+         url('Blokletters-Viltstift-webfont.ttf') format('truetype'),
+         url('Blokletters-Viltstift-webfont.svg#blokletters_viltstifviltstift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html {
     height: 100%;
     width: 100%;
@@ -23,6 +57,16 @@ header a {
     text-decoration: none;
     color: #FDCB46;
 }
+h2 {
+    text-align: center;
+    font-size: 1.8vw;
+}
+.barre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 10% 2.5% 10%;
+}
 #laNote {
     width: 90%;
     height: 100%;
@@ -42,7 +86,7 @@ header a {
     white-space: nowrap;
     display: block;
     max-height: 70%;
-    
+    font-weight: bold;
 }
 .titreEntree:nth-child(1) {
     flex: 2;
@@ -66,10 +110,12 @@ header a {
     margin: 0 12% 0 12%;
 }
 .desc {
+    font-family: 'blokletters_potloodpotlood';
     font-style: italic;
+    font-size: 1vw;
 }
 .prix {
-    font-weight: bold;
+    font-family: 'blokletters_balpenbalpen';
 }
 footer {
     position: fixed;
@@ -92,21 +138,11 @@ footer a {
     font-size: 2vw;
     text-decoration: none;
 }
-h2 {
-    text-align: center;
-    font-size: 1.8vw;
-}
-.barre {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5% 10% 2.5% 10%;
-}
 #link {
+    font-family: 'blokletters_balpenbalpen';
+    font-family: 'blokletters_viltstifviltstift';
     position: relative;
     margin-top: -0.3%;
-    font-style: italic;
-    font-weight: 200,
 }
 #link:after{
     content: '';
@@ -114,7 +150,6 @@ h2 {
     width: 0;
     height: 0.2vw;
     display: block;
-    margin-top: 0.2%;
     right: 0;
     background: #000;
     transition: width 1s ease;
@@ -138,7 +173,4 @@ h2 {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-
-
-
 

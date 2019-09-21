@@ -78,7 +78,55 @@ h2 {
     padding: 5% 0 5% 0;
     justify-content: center;
 }
-.titreEntree {
+.titreEntrees {
+    background-color: #FCDFDB;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0 2% 0 2%;
+    white-space: nowrap;
+    display: block;
+    max-height: 70%;
+    font-weight: bold;
+}
+.titreEntree:nth-child(1) {
+    flex: 2;
+}
+.titreEntree:nth-child(3) {
+    flex: 2;
+}
+titrePlats {
+    background-color: #FCDFDB;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0 2% 0 2%;
+    white-space: nowrap;
+    display: block;
+    max-height: 70%;
+    font-weight: bold;
+}
+titrePlat:nth-child(1) {
+    flex: 2;
+}
+titrePlat:nth-child(3) {
+    flex: 2;
+}
+.titreDesserts {
+    background-color: #FCDFDB;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 0 2% 0 2%;
+    white-space: nowrap;
+    display: block;
+    max-height: 70%;
+    font-weight: bold;
+}
+.titreDessert:nth-child(1) {
+    flex: 2;
+}
+.titreDessert:nth-child(3) {
+    flex: 2;
+}
+.titreEntrees {
     background-color: #FCDFDB;
     font-size: 1.5vw;
     text-align: center;
@@ -173,3 +221,93 @@ h3:hover:after{
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+@media all and (max-device-width: 1280px) {
+
+    .titreEntrees {
+        background-color: #ededef;
+        font-size: 2.5vw;
+        text-align: center;
+        margin: 0 1% 0 1%;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .titreEntree {
+        height: auto;
+        max-width: 30%;
+    }
+
+    .titreEntree:nth-child(1) {
+        flex: 0.6;
+    }
+
+    .titreEntree:nth-child(3) {
+        flex: 0.6;
+    }
+
+    .titrePlats {
+        background-color: #ededef;
+        font-size: 2.5vw;
+        text-align: center;
+        margin: 0 1% 0 1%;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .titrePlat {
+        height: auto;
+        max-width: 30%;
+    }
+
+    .titrePlat:nth-child(1) {
+        flex: 0.6;
+    }
+
+    .titrePlat:nth-child(3) {
+        flex: 0.6;
+    }
+
+    .titreDesserts {
+        background-color: #ededef;
+        font-size: 2.5vw;
+        text-align: center;
+        margin: 0% 1% 0 1%;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .titreDessert {
+        height: auto;
+        max-width: 30%;
+    }
+
+    .titreDessert:nth-child(1) {
+        flex: 0.6;
+    }
+
+    .titreDessert:nth-child(3) {
+        flex: 0.6;
+    }
+
+    .plats {
+        font-size: 2.5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 15% 0 15%;
+    }
+
+    .dessert {
+        font-size: 2.5vw;
+        text-align: start;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2.5vw;
+    }
+}
+  
+
+
+

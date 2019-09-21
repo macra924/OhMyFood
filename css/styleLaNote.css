@@ -94,7 +94,7 @@ h2 {
 .titreEntree:nth-child(3) {
     flex: 2;
 }
-titrePlats {
+.titrePlats {
     background-color: #FCDFDB;
     font-size: 1.5vw;
     text-align: center;
@@ -104,10 +104,10 @@ titrePlats {
     max-height: 70%;
     font-weight: bold;
 }
-titrePlat:nth-child(1) {
+.titrePlat:nth-child(1) {
     flex: 2;
 }
-titrePlat:nth-child(3) {
+.titrePlat:nth-child(3) {
     flex: 2;
 }
 .titreDesserts {

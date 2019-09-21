@@ -25,7 +25,7 @@ header a {
 #leChic {
     width: 90%;
     height: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     background-color: #fff5fe;
     box-shadow: 1px 1px 10px;
@@ -36,7 +36,7 @@ header a {
 .pres {
     display: block;
     justify-content: center;
-    max-width: 40%;
+    max-width: 60%;
     height: auto;
     margin: 2% auto 2% auto;
 
@@ -48,12 +48,12 @@ header a {
     justify-content: space-between;
     margin: 0 15% 0 15%;
 }
-.titreEntree {
+.titreEntrees {
     background-color: #fff5fe;
     font-size: 1.5vw;
     color: #c67512;
     text-align: center;
-    margin: 0 2% 0 2%;
+    margin: 0.6% 2% 0 2%;
     white-space: nowrap;
     display: block;
     max-height: 70%;
@@ -71,12 +71,12 @@ header a {
 .prixE {
     color: #c67512;
 }
-.titrePlat {
+.titrePlats {
     background-color: #fff5fe;
     font-size: 1.5vw;
     color: #a56799;
     text-align: center;
-    margin: 0 2% 0 2%;
+    margin: 0.6% 2% 0 2%;
     white-space: nowrap;
     display: block;
     max-height: 70%;  
@@ -93,12 +93,12 @@ header a {
 .prixP {
     color: #a56799;
 }
-.titreDessert {
+.titreDesserts {
     background-color: #fff5fe;
     font-size: 1.5vw;
     color: #6e4ccc;
     text-align: center;
-    margin: 0 2% 0 2%;
+    margin: 0.6% 2% 0 2%;
     white-space: nowrap;
     display: block;
     max-height: 70%;  
@@ -140,10 +140,10 @@ h2 {
     font-size: 1.8vw;
 }
 .barre {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    margin: 5% 0 2.5% 0;
+    margin: 5% 5% 2.5% 5%;
 }
 h3 {
     position: relative;
@@ -177,4 +177,81 @@ h3:hover:after{
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media all and (max-device-width: 1280px) {
+    
+    .titreEntrees {
+    background-color: #fff5fe;
+    font-size: 3vw;
+    color: #c67512;
+    text-align: center;
+    margin: 0 1% 0 1%;
+    white-space: nowrap;
+    display: block;
+    }
+    .titreEntree {
+        height: auto;
+        max-width: 30%;
+    }
+    .titreEntree:nth-child(1) {
+    flex: 0.6;
+    }
+    .titreEntree:nth-child(3) {
+    flex: 0.6;
+    }
+    .titrePlats {
+    background-color: #fff5fe;
+    font-size: 3vw;
+    color: #a56799;
+    text-align: center;
+    margin: 0 1% 0 1%;
+    white-space: nowrap;
+    display: block;  
+    }
+    .titrePlat {
+        height: auto;
+        max-width: 30%;
+    }
+    .titrePlat:nth-child(1) {
+    flex: 0.6;
+    }
+    .titrePlat:nth-child(3) {
+    flex: 0.6;
+    }
+    .titreDesserts {
+    background-color: #fff5fe;
+    font-size: 3vw;
+    color: #6e4ccc;
+    text-align: center;
+    margin: 0% 1% 0 1%;
+    white-space: nowrap;
+    display: block;  
+    }
+    .titreDessert {
+        height: auto;
+        max-width: 30%;
+    }
+    .titreDessert:nth-child(1) {
+    flex: 0.6;
+    }
+    .titreDessert:nth-child(3) {
+    flex: 0.6;
+    }
+    .plats {
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15% 0 15%;
+    }
+    .dessert {
+    font-size: 2.5vw;
+    text-align: start;
+    color: #6e4ccc;
+    }
+    h2 {
+    text-align: center;
+    font-size: 2.5vw;
+}
 }

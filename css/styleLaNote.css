@@ -151,16 +151,14 @@ titrePlat:nth-child(3) {
 
 }
 .plats {
-    font-size: 1.5vw;
+    font-family: 'blokletters_balpenbalpen';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 12% 0 12%;
-}
-.desc {
-    font-family: 'blokletters_potloodpotlood';
-    font-style: italic;
-    font-size: 1vw;
 }
 .prix {
     font-family: 'blokletters_balpenbalpen';
@@ -224,7 +222,7 @@ h3:hover:after{
 @media all and (max-device-width: 1280px) {
 
     .titreEntrees {
-        background-color: #ededef;
+        background-color: #FCDFDB;
         font-size: 2.5vw;
         text-align: center;
         margin: 0 1% 0 1%;
@@ -246,7 +244,7 @@ h3:hover:after{
     }
 
     .titrePlats {
-        background-color: #ededef;
+        background-color: #FCDFDB;
         font-size: 2.5vw;
         text-align: center;
         margin: 0 1% 0 1%;
@@ -268,7 +266,7 @@ h3:hover:after{
     }
 
     .titreDesserts {
-        background-color: #ededef;
+        background-color: #FCDFDB;
         font-size: 2.5vw;
         text-align: center;
         margin: 0% 1% 0 1%;

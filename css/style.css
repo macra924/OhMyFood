@@ -34,7 +34,7 @@ header a {
     flex-wrap: wrap;
 }
 
-.petitsMenu {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -91,12 +91,25 @@ h2 {
 }
 
 .petitMenu {
-    transition: all 1s ease-in;
+    overflow: hidden;
+    position: relative;
 }
 
-.petitMenu:hover {
-    transform: scale(1.15);
-    opacity: 0.6;
+.petitMenu img {
+    max-width: 100%;
+    transition: all 0.8s;
+}
+
+.petitMenu * {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.petitMenu img:hover {
+
+    transform: scale(1.26);
 }
 
 .point1 {
@@ -198,26 +211,26 @@ h2 {
         opacity: 1
     }
 }
-@media all and (max-device-width: 1280px) {
-        
-    footer a {
-    text-decoration: none;
-    color: #FDCB46;
-    font-size: 5vw;
-    text-decoration: none;
-    }
-#prochainement {
-    display: flex;
-    justify-content: center;
-    margin: 4% 35% 15% 35%;
-    text-align: center;
-    color: #FDCB46;
-    font-size: 3.5vw;
-    background-color: #579C87;
-    padding: 1%;
-    border-radius: 25px;
-}
 
-    
+@media all and (max-device-width: 1280px) {
+
+    footer a {
+        text-decoration: none;
+        color: #FDCB46;
+        font-size: 5vw;
+        text-decoration: none;
+    }
+
+    #prochainement {
+        display: flex;
+        justify-content: center;
+        margin: 4% 35% 15% 35%;
+        text-align: center;
+        color: #FDCB46;
+        font-size: 3.5vw;
+        background-color: #579C87;
+        padding: 1%;
+        border-radius: 25px;
+    }
+
 }
-    

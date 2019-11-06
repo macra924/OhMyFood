@@ -110,6 +110,7 @@ h2 {
 .petitMenu img:hover {
 
     transform: scale(1.26);
+    opacity: 0.6;
 }
 
 .point1 {
